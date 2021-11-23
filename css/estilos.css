@@ -1,0 +1,524 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+header a{
+    text-decoration: none;
+    color:whitesmoke;
+
+}
+
+body{
+    width: 100%;
+    height: 50vh;
+font-family: 'Open Sans', sans-serif;
+}
+footer{  
+    margin-top:400px;
+    width:100%;
+    
+    
+}
+
+.fondo{
+    background-image: url(../Multimedia/imagenes/FondoMessi.jfif);
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+
+   
+nav{
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    height: 100px;   
+}
+
+ol, ul {
+    list-style: none;
+}
+.menuPrincipal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    color:black;
+
+  }
+
+
+.menuPrincipal li a {
+    background-color: #000;
+    color:white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menuPrincipal li a:hover{
+    background-color:whitesmoke;
+    color: black;
+
+}
+
+.menuPrincipal > li {
+    float: left;
+}
+
+.menuPrincipal li ul {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    min-width: 140px;
+}
+
+.menuPrincipal li:hover > ul {
+    display: block;
+    
+}
+
+
+
+#psgMessi{
+text-align: center;
+justify-content: center;
+}
+
+
+
+
+
+
+h1, h2, h3, h4 { 
+    
+    border: solid;
+    background-color:whitesmoke;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    position: sticky;
+    font-weight: 800;
+    animation-name: texto;
+    animation-duration:3s; 
+    
+
+}    
+
+@keyframes texto{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+    
+button {
+    background-color:black;
+    color:black;
+    font-weight: bold;
+    margin: 1%;
+}
+.imagen{
+    margin-left: 50%;
+    margin: 1%;
+    
+}
+
+.masVendida {
+    color: whitesmoke;
+    font-style:normal;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 50%;
+    margin: 1%;
+    
+   
+}
+
+
+
+.topCinco{
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.colorFondo{
+    background-color: black;
+    color:whitesmoke;
+    transform: translate(50px);
+    
+}
+
+
+.youTube{
+    width: 100vh;
+    height:100vh;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+section {
+    justify-content: center;
+    
+}
+
+section ul{
+    color:whitesmoke;
+    font-style: normal;
+    font-weight:800;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    
+    
+}
+
+.listas{
+padding: 10px; 
+color: whitesmoke;
+}
+ul{ 
+    list-style-type: none;    
+}
+.formCompra{
+    font-style: normal;
+    font-weight: 700;
+    color:whitesmoke;
+}
+.compra{
+    border: solid;
+    border-color: whitesmoke;
+   
+}
+.pie{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 1px;
+    border-color: black;
+
+}
+/*GRID*/
+#cincoTop {  
+    height: 75vh;
+}
+div .colorFondo{ 
+    justify-content: center;
+    margin:5px;
+    padding: 1px;
+    border: solid 1px whitesmoke;
+    transition: width 1s;
+}
+div .colorFondo :hover {
+    width: 300px ;
+    
+}
+.gridAreas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"/*Fila 1*/
+    "menu menu menu"/*Fila 2*/
+    "messi messi messi"/*Fila 3*/
+    "top top top"
+    "pie pie pie"/*Fila 4*/;
+    grid-template-rows: 200px 400px 400px 400px 150px;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+/*Hay que ponerle el nombre (UNICO) para que lo reconozca*/
+header{
+    grid-area: cabeza;
+} 
+nav{
+    grid-area: menu;
+}
+#psgMessi{
+    grid-area: messi;
+} /*Se le puede poner cualquier nombre*/
+#cincoTop{
+    grid-area: top;  
+}
+footer{
+    grid-area: pie; 
+}
+.gridFutbolarg{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"/*Fila 1*/
+    "menu menu menu"/*Fila 2*/
+    "primera primera primera"/*Fila 3*/
+    "pie pie pie"/*Fila 4*/;
+    grid-template-rows: 200px 400px 400px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+/*Hay que ponerle el nombre (UNICO) para que lo reconozca*/
+header{
+    grid-area: cabeza;
+} 
+nav{
+    grid-area: menu;
+}
+.primeraDiv{
+    grid-area: primera;
+} /*Se le puede poner cualquier nombre*/
+footer{
+    grid-area: pie; 
+}
+.gridInter{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"/*Fila 1*/
+    "menu menu menu"/*Fila 2*/
+    "ligas ligas ligas"/*Fila 3*/
+    "pie pie pie"/*Fila 4*/;
+    grid-template-rows: 200px 400px 400px 150px;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+/*Hay que ponerle el nombre (UNICO) para que lo reconozca*/
+header{
+    grid-area: cabeza;
+} 
+nav{
+    grid-area: menu;
+}
+.ligasTop{
+    grid-area: ligas;
+} /*Se le puede poner cualquier nombre*/
+footer{
+    grid-area: pie; 
+}
+.gridSeleccion{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"/*Fila 1*/
+    "menu menu menu"/*Fila 2*/
+    "pais pais pais"/*Fila 3*/
+    "pie pie pie"/*Fila 4*/;
+    grid-template-rows: 200px 400px 400px 150px;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+/*Hay que ponerle el nombre (UNICO) para que lo reconozca*/
+header{
+    grid-area: cabeza;
+    
+} 
+nav{
+    grid-area: menu;
+    
+}
+.paises{
+    grid-area: pais;
+} /*Se le puede poner cualquier nombre*/
+footer{
+    grid-area: pie; 
+}
+
+@media only screen and (max-width:767px){
+
+h1, h2, h3, h4 { 
+        
+        border: solid;
+        background-color:whitesmoke;
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        font-weight: 800;
+        animation-name: texto;
+        animation-duration:3s; 
+        
+    
+}
+#psgMessi{
+    text-align: center;
+    justify-content: center;
+    margin-top: 25%;
+    }
+  
+.h3{
+    margin-top: 25%;
+}
+.gridAreas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"/*Fila 1*/
+    "menu menu menu"/*Fila 2*/
+    "messi messi messi"/*Fila 3*/
+    "top top top"
+    "pie pie pie"/*Fila 4*/;
+    grid-template-rows: 200px 400px 400px 400px 150px;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+/*Hay que ponerle el nombre (UNICO) para que lo reconozca*/
+header{
+    grid-area: cabeza;
+} 
+nav{
+    grid-area: menu;
+}
+#psgMessi{
+    grid-area: messi;
+} /*Se le puede poner cualquier nombre*/
+#cincoTop{
+    grid-area: top;  
+}
+footer{
+    grid-area: pie; 
+}
+
+    .menuPrincipal{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        font-style:italic;
+        font-weight: 800;
+        text-align: center;
+        color:black;       
+    
+      }
+    
+    
+    .menuPrincipal li a {
+        background-color: #000;
+        color:white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+    
+    .menuPrincipal li a:hover{
+        background-color:whitesmoke;
+        color: black;
+        z-index: 1;
+    
+    }
+    
+    .menuPrincipal > li {
+        float:left;
+    }
+    
+    .menuPrincipal li ul {
+        display:none;
+        position: absolute;
+        z-index: 1;
+        min-width: 140px;
+    }
+    
+    .menuPrincipal li:hover > ul {
+        display: block;
+        
+    }
+    .fondo{
+        background-color: rgb(105, 43, 43);
+        
+    }
+    .youTube{
+        width: 50vh;
+        height:50vh;
+        margin-top: 10%;
+    }
+    .listas .mx-auto {
+        margin-right: auto !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+
+
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    h1, h2, h3, h4 { 
+        
+        border: solid;
+        background-color:whitesmoke;
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        font-weight: 800;
+        animation-name: texto;
+        animation-duration:3s; 
+        
+    
+}
+    .menuPrincipal{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        font-style:italic;
+        font-weight: 800;
+        text-align: center;
+        color:black;       
+    
+      }
+    
+    
+    .menuPrincipal li a {
+        background-color: #000;
+        color:white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+    
+    .menuPrincipal li a:hover{
+        background-color:whitesmoke;
+        color: black;
+        z-index: 1;
+    
+    }
+    
+    .menuPrincipal > li {
+        float:left;
+    }
+    
+    .menuPrincipal li ul {
+        display:none;
+        position: absolute;
+        z-index: 1;
+        min-width: 140px;
+    }
+    
+    .menuPrincipal li:hover > ul {
+        display: block;
+        
+    }
+    .fondo{
+        background-color: rgb(105, 43, 43);
+        
+    }
+    .youTube{
+        width: 50vh;
+        height:50vh;
+        margin-top: 10%;
+    }
+    .mx-auto {
+        margin-right: auto !important;
+        display: flex;
+        flex-direction: row;
+      }
+    
+    }    
+
+
+@media only screen and (min-width:1024px){
+    
+}
