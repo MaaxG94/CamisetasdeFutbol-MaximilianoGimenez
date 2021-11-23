@@ -46,13 +46,13 @@ ol, ul {
     font-style: normal;
     font-weight: 800;
     text-align: center;
-    color:black;
+    color:rebeccapurple;
 
   }
 
 
 .menuPrincipal li a {
-    background-color: #000;
+    background-color:blueviolet;
     color:white;
     text-decoration: none;
     padding: 10px 15px;
@@ -61,7 +61,7 @@ ol, ul {
 
 .menuPrincipal li a:hover{
     background-color:whitesmoke;
-    color: black;
+    color: blueviolet;
 
 }
 
@@ -96,8 +96,8 @@ justify-content: center;
 h1, h2, h3, h4 { 
     
     border: solid;
-    background-color:whitesmoke;
-    color: black;
+    background-color:blueviolet;
+    color: blue;
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -121,8 +121,8 @@ h1, h2, h3, h4 {
 
     
 button {
-    background-color:black;
-    color:black;
+    background-color:royalblue;
+    color:salmon;
     font-weight: bold;
     margin: 1%;
 }
@@ -133,7 +133,7 @@ button {
 }
 
 .masVendida {
-    color: whitesmoke;
+    color:violet;
     font-style:normal;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
@@ -146,7 +146,7 @@ button {
 
 
 .topCinco{
-    color: whitesmoke;
+    color:violet;
     font-style: normal;
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
@@ -155,8 +155,8 @@ button {
 }
 
 .colorFondo{
-    background-color: black;
-    color:whitesmoke;
+    background-color: blueviolet;
+    color:honeydew;
     transform: translate(50px);
     
 }
@@ -203,8 +203,8 @@ ul{
 }
 .pie{
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: violet;
+    color: honeydew;
     border: 1px;
     border-color: black;
 
@@ -520,5 +520,5 @@ footer{
 
 
 @media only screen and (min-width:1024px){
-    
+
 }
